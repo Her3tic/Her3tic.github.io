@@ -1,0 +1,101 @@
+<!doctype html>
+<html manifest="hungryhedgehogoffline.appcache">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hungry hedgehog</title>
+<meta name="description" content="HungrySchnepperle. Try to eat all vaginas, nipples, anus, but avoid penises">
+<meta name="keywords" content="hungry, Schnepperle, eat, vaginas, nipples, anus">
+<link href="../boilerplate.css" rel="stylesheet" type="text/css">
+<link href="../styleg.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+		canvas { border: 1px solid black; }
+</style>
+<script type="text/javascript">
+window.cookieconsent_options = {"link":"http://www.mikanse.com/privacy-policy.html","theme":"//www.mikanse.com/cookieconsent/lighttopgames.css"};</script>
+<script type="text/javascript" src="//www.mikanse.com/cookieconsent/cookieconsent.js"></script><!-- End Cookie Consent -->
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <header id="top" class="fluid"><h1>    Hungry Dr. Schnepperle   </h1>
+        <p>Try to eat all nipples, vaginas, anus, but avoid penises for as long as possible.</p>
+        <p>Did you know: Dr. Schnepperle hibernate in cold climates; In captivity, Dr. Schnepperle tend to get along with dogs, cats and other pets.</p>
+      <p>&nbsp;</p></header>
+  
+  <div id="fb-root"></div>
+	<div style="text-align: center;">
+
+	<script>
+	(function(){
+		if (window.location.protocol.substr(0, 4) === "file")
+		{
+			alert("Mikanse games won't work until you upload them.");
+		}
+	})();
+	</script>
+        
+		<canvas id="c2canvas" width="1280" height="720">
+            We're sorry, but it appears that your browser does not currently support the web technologies needed to play &quot;Hungry hedgehog&quot;. Please update your browser to the latest version.  
+			<br/><br/><br/>
+		</canvas>
+        <br />
+	</div>
+	<script src="../jquery-2.0.0.min.js"></script>
+	<script src="hungryhedgehog.js"></script>
+
+  <script>
+		jQuery(window).resize(function() {
+			if (window.c2resizestretchmode === 1)
+			{
+				window.c2resizestretchmode = 2;
+				var canvas = document.getElementById("c2canvas");
+				window.c2oldcanvaswidth = canvas.width;
+				window.c2oldcanvasheight = canvas.height;
+				window.c2eventtime = Date.now();
+				var w = jQuery(window).width();
+				var h = jQuery(window).height();
+				cr_sizeCanvas(w, h);
+			}
+			else if (window.c2resizestretchmode === 2)
+			{
+				
+				if (Date.now() > window.c2eventtime + 50)
+				{
+					window.c2resizestretchmode = 0;
+					cr_sizeCanvas(window.c2oldcanvaswidth, window.c2oldcanvasheight);
+				}
+			}
+		});
+	
+		jQuery(document).ready(function ()
+		{	
+			cr_createRuntime("c2canvas");
+		});
+
+		function onVisibilityChanged() {
+			if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+				cr_setSuspended(true);
+			else
+				cr_setSuspended(false);
+		};
+		
+		document.addEventListener("visibilitychange", onVisibilityChanged, false);
+		document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+    </script>
+  </div><footer class="fluid down">
+    <div id="textUnderGame" class="fluid">
+    <a href="../index.html">back to 3xitLight.github.io</a></div>
+     </div>
+    <div id="underText" class="fluid">
+</script>
+    </div>
+    <div id="aboutPrivacy" class="fluid">
+      <hr>
+      <p><a href="" target="_blank"></a></p>
+</div>
+</footer>
+</div>
+</body>
+</html>
