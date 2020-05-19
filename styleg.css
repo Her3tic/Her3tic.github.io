@@ -1,0 +1,46 @@
+body{font:107%/1.5 Arial, Helvetica, sans-serif;background:#181A1B;padding:0;color:#000;}
+h1{font-size:1.4em;text-align:center;color:#FFFFFF;}
+p{font-size:1.2em;color:#FFFFFF;text-align:center;}
+a:link{color:#FFFFFF;text-decoration:none;}
+a:visited{color:#FFFFFF;text-decoration:none;}
+img, object, embed, video{max-width:100%;}
+.fluid{clear:both;margin-left:0;width:100%;float:left;display:block;}
+.fluidList{list-style:none;list-style-image:none;margin:0;padding:0;}
+.gridContainer{margin-left:auto;margin-right:auto;width:93.1%;padding-left:2.45%;padding-right:2.45%;background-color:#22272B;clear:none;float:none;}
+#top{border:thin solid #C1C1C1;}
+#mainNav{width:100%;}
+#menuSystem{width:100%;margin-left:0;}
+.menuItem{text-align:center;margin-bottom:3%;margin-top:2%;padding-bottom:1%;padding-top:1%;color:#0000FF;font-size:x-large;width:100%;clear:both;margin-left:0;}
+/*.down{border:thin solid #C1C1C1;}*/
+#textUnderGame{text-align:center;}
+#underText{text-align:center;margin-bottom:1%;margin-top:1%;}
+#aboutPrivacy{text-align:center;}
+#theGame{width:100%;clear:both;margin-top:1%;margin-bottom:1%;}
+.zeroMargin_mobile{margin-left:0;}
+.hide_mobile{display:none;}
+@media only screen and (min-width:601px){.gridContainer{width:93.6%;padding-left:1.2%;padding-right:1.2%;clear:none;float:none;margin-left:auto;}
+#top{}
+#mainNav{width:100%;}
+#menuSystem{width:100%;}
+.menuItem{width:30%;clear:none;margin-left:1%;}
+.down{}
+#textUnderGame{}
+#underText{}
+#aboutPrivacy{}
+#theGame{width:100%;clear:both;margin-left:0;}
+.hide_tablet{display:none;}
+.zeroMargin_tablet{}
+}
+@media only screen and (min-width:1091px){.gridContainer{width:90.4666%;max-width:1232px;padding-left:0.7666%;padding-right:0.7666%;margin:auto;clear:none;float:none;margin-left:auto;}
+#top{}
+#mainNav{width:18%;margin-top:15%;}
+#menuSystem{width:100%;margin-left:0;}
+.menuItem{width:100%;clear:both;margin-left:0;margin-top:10%;margin-bottom:10%;}
+.down{}
+#textUnderGame{}
+#underText{}
+#aboutPrivacy{}
+#theGame{margin-left:0.5%;clear:none;width:76%;}
+.zeroMargin_desktop{margin-left:0;}
+.hide_desktop{display:none;}
+}
